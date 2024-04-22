@@ -5,9 +5,9 @@ const app = express()
 
 dotenv.config()
 
-app.use(express.json());
-
 app.use(cors())
+
+app.use(express.json());
 
 app.route("/", (req, res) => {
     res.json({ message: "bonjour" });
