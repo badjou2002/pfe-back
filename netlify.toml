@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build" # Commande pour construire votre application
+  publish = "public"        # Dossier contenant les fichiers à publier
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
