@@ -5,11 +5,8 @@ const app = express()
 
 dotenv.config()
 
-app.route("/", (req, res) => {
-    res.json({ message: "bonjour" });
-})
-
 app.use(express.json());
+
 app.use(cors())
 
 app.route("/", (req, res) => {
