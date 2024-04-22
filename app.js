@@ -4,14 +4,14 @@ const dotenv = require('dotenv')
 const app = express()
 
 dotenv.config()
+app.use(cors())
 
+
+
+app.use(express.json());
 app.route("/", (req, res) => {
     res.json({ message: "bonjour" });
 })
-
-app.use(express.json());
-app.use(cors())
-
 app.route("/", (req, res) => {
     res.json({ message: "bonjour" });
 })
