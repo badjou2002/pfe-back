@@ -6,10 +6,10 @@
   "scripts": {
     "start": "nodemon app",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "jsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Abdelmaksoud Bilel",
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^5.11.0",
